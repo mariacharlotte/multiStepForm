@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f7fb;
+}
+.container{
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    /* width: 100%; */
+}
+.container .steps{
+  width: 100%;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.steps .circle{
+    width: 50px;
+    height: 50px;
+    color: #999;
+    background-color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    border: 4px solid #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms ease;
+    transition-delay: 0s;
+}
+.steps .circle.active{
+    transition-delay: 100ms;
+    color: #4070f4;
+    border-color: #4070f4;
+}
+.steps .progress-bar{
+    width: 100%;
+    height: 4px;
+    background-color: #e0e0e0;
+    position: absolute;
+    z-index: -1;
+}
+.progress-bar .indicator{
+    /* width: 100%; */
+    height: 100%;
+    position: absolute;
+    background: #4070f4;
+    transition: all 300ms ease;
+}
+.container .buttons{
+    display: flex;
+    gap: 20px;
+}
+.buttons button{
+    padding: 8px 20px;
+    color: #fff;
+    background-color: #4070f4;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+.buttons button:active{
+    transform: scale(0.97);
+}
+.buttons button:disabled{
+    background: #87a5f8;
+    cursor: not-allowed;
+}
+
+
+
+
+
+
